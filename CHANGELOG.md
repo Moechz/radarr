@@ -2,7 +2,7 @@
 
 All notable user-visible changes to the Radarr TOS application package.
 
-## 6.4.4.10685-1 — 2026-11-08
+## 6.4.4-1 — 2026-11-08
 
 ### Added
 - First release. Radarr (`linuxserver/radarr:6.4.4.10685-ls325`, Docker Hub official image, unmodified)

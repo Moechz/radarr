@@ -67,8 +67,8 @@ automated validation (no ARM host was available for a container E2E).
 
 ```bash
 scripts/build.sh                  # -> out/radarrdocker.tar.gz + .sha256
-scripts/build.sh 6.4.4.10685-2   # packaging iteration bump
-scripts/build.sh 6.4.4.10685-1 aarch64
+scripts/build.sh 6.4.4-2   # packaging iteration bump
+scripts/build.sh 6.4.4-1 aarch64
 ```
 
 The build stages the four files, substitutes the version/platform placeholders,
@@ -94,12 +94,12 @@ bash test/install-and-verify.sh                  # on-device E2E (needs root)
 ## Store submission checklist
 
 1. Public GitHub repo (code + README only).
-2. Release **tag `v6.4.4.10685-1`**, assets `radarrdocker.tar.gz` +
+2. Release **tag `v6.4.4-1`**, assets `radarrdocker.tar.gz` +
    `radarrdocker.tar.gz.sha256` (Docker asset naming: `<app_id>.tar.gz`, **no
    platform suffix**).
 3. Developer platform → Add Application: ID `radarrdocker`, package type Docker,
    repository URL, architecture `x86_64`.
-4. Version Management → Add Version `6.4.4.10685-1` → automated validation → review.
+4. Version Management → Add Version `6.4.4-1` → automated validation → review.
 
 ## License / branding
 
