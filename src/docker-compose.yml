@@ -1,7 +1,7 @@
 # ===========================================================================
 # Radarr for TerraMaster TOS 7 (Docker application)
 # ===========================================================================
-# Upstream image : linuxserver/radarr:6.4.4.10685-ls325 (Docker Hub, used unmodified)
+# Upstream image : linuxserver/radarr:6.4.4.10685-ls326 (Docker Hub, used unmodified)
 #                  -> https://github.com/linuxserver/docker-radarr
 #
 # Ports   : host 8016 -> container 7878. The host port is in the
@@ -26,7 +26,7 @@
 
 services:
   radarrdocker:
-    image: linuxserver/radarr:6.4.4.10685-ls325
+    image: linuxserver/radarr:6.4.4.10685-ls326
     container_name: radarrdocker
     restart: unless-stopped
     user: "1000:1000"

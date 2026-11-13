@@ -14,182 +14,182 @@ name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [zh-cn]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr 是电影收藏管理工具：监控新片、搜索索引器、把选中的资源交给下载客户端，并自动导入和重命名完成的文件。本应用运行 LinuxServer.io 官方镜像并以非 root 用户运行；设置和数据库在应用数据目录，/media 用于媒体库，/downloads 用于下载目录。打开应用后添加索引器、下载客户端和根目录即可。"
-release_note = "1. 首个版本：Radarr 6.4.4，来自 Docker Hub，以非 root 用户运行；设置与数据库在应用数据目录，/media 与 /downloads 用于媒体库和下载。"
-important    = "需要 DockerEngine。本应用不含索引器和下载客户端，请在设置中添加；根目录填 /media，下载目录填 /downloads。数据在 DockerAppData/radarrdocker，media/downloads 与其他应用不共享。卸载并删除数据前请备份。页面是局域网明文 HTTP。"
+release_note = "6.4.4-2：新增隐私政策与非官方/商标声明；升级到最新 LinuxServer.io 构建（6.4.4.10685-ls326）以修复 CVE；已按审核意见 C2、C3、C6、C8、T1 整改。"
+important    = "需要 DockerEngine。本应用不含索引器/下载客户端，请在设置中添加；根目录 /media，下载目录 /downloads。数据在 DockerAppData/radarrdocker，media/downloads 不与其他应用共享。Radarr 会联系你配置的索引器和下载客户端，不上报遥测。详见隐私政策。Radarr 是其权利人的商标，本包为非官方社区打包。卸载前请备份。页面为局域网明文 HTTP。"
 
 [zh-hk]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr 是電影收藏管理工具：監控新片、搜尋索引器、把選中的資源交給下載用戶端，並自動匯入和重新命名完成的檔案。本應用執行 LinuxServer.io 官方鏡像並以非 root 使用者執行；設定和資料庫在應用程式資料目錄，/media 用於媒體庫，/downloads 用於下載目錄。開啟應用後新增索引器、下載用戶端和根目錄即可。"
-release_note = "1. 首個版本：Radarr 6.4.4，來自 Docker Hub，以非 root 使用者執行；設定與資料庫在應用程式資料目錄，/media 與 /downloads 用於媒體庫和下載。"
-important    = "需要 DockerEngine。本應用不含索引器和下載用戶端，請在設定中新增；根目錄填 /media，下載目錄填 /downloads。資料在 DockerAppData/radarrdocker，media/downloads 與其他應用不共享。解除安裝並刪除資料前請備份。頁面是區域網路明文 HTTP。"
+release_note = "6.4.4-2：新增隱私政策與非官方/商標聲明；升級到最新 LinuxServer.io 建置（6.4.4.10685-ls326）以修復 CVE；已依審核意見 C2、C3、C6、C8、T1 整改。"
+important    = "需要 DockerEngine。本應用不含索引器/下載用戶端，請在設定中新增；根目錄 /media，下載目錄 /downloads。資料在 DockerAppData/radarrdocker，media/downloads 不與其他應用共享。Radarr 會連線你設定的索引器和下載用戶端，不上傳遙測。詳見隱私政策。Radarr 是其權利人的商標，本包為非官方社群打包。解除安裝前請備份。頁面為區域網路明文 HTTP。"
 
 [fr-fr]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [de-de]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [it-it]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [es-es]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [hu-hu]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [ja-jp]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [ko-kr]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [pl-pl]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [ru-ru]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [tr-tr]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [pt-pt]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [ar-sa]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [cs-cz]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [he-il]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [id-id]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [nb-no]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [nl-nl]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [sv-se]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [th-th]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 
 [vi-vn]
 name         = "Radarr"
 auth         = "linuxserver.io"
 version      = "@@VERSION@@"
 descript     = "Radarr is a movie collection manager. It watches release feeds, searches your indexers, sends chosen releases to a download client and imports and renames the finished files. This package runs the official LinuxServer.io Radarr image as a non-root container; its settings and database live in the application data folder, with /media for the library and /downloads for completed downloads. Open the app to add indexers, a download client and root folders."
-release_note = "1. First release: Radarr 6.4.4 from Docker Hub, running as a non-root container; settings and database in the application data folder, with /media and /downloads mounted for the library."
-important    = "Requires DockerEngine. The app contains no indexer and no download client: add them in Settings, and set a root folder to /media and the download folder to /downloads. Data is in DockerAppData/radarrdocker; media and downloads stay in the same application folder and are not shared with other apps. Back up the folder before uninstalling with data removal. The page is plain HTTP on the LAN."
+release_note = "6.4.4-2: added a privacy policy and a trademark/non-official statement; upgraded to the latest LinuxServer.io build (6.4.4.10685-ls326) for CVE remediation. Rectified per review comments C2, C3, C6, C8, T1."
+important    = "Requires DockerEngine. No indexer/download client is included; add them in Settings, root folder /media, downloads /downloads. Data is in DockerAppData/radarrdocker; media/downloads are not shared with other apps. Radarr contacts the indexers and download clients you configure; no telemetry. See the privacy policy. Radarr is a trademark of its owner; this is an unofficial community package. Back up the folder before uninstalling. Plain HTTP on the LAN."
 

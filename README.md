@@ -11,13 +11,13 @@ Radarr on TOS 7 through the App Center:
 - `config.ini` — TOS application metadata (`application_type: docker`, id `radarrdocker`)
 - `radarrdocker.lang` — 23-language superset (TOS requires 14)
 - `radarrdocker.svg` — application icon (529 bytes, 2 SVG elements)
-- `docker-compose.yml` — one service, image `linuxserver/radarr:6.4.4.10685-ls325`
+- `docker-compose.yml` — one service, image `linuxserver/radarr:6.4.4.10685-ls326`
 
 ## How it works
 
 | | |
 |---|---|
-| Container image | `linuxserver/radarr:6.4.4.10685-ls325` (Docker Hub, used unmodified) |
+| Container image | `linuxserver/radarr:6.4.4.10685-ls326` (Docker Hub, used unmodified) |
 | Open | `http://<NAS-IP>:8016/` (container port 7878) |
 | Runs as | non-root, `user: "1000:1000"` |
 | Persistent data | `/config` → `/Volume1/DockerAppData/radarrdocker/config`, `/media` → `/Volume1/DockerAppData/radarrdocker/media`, `/downloads` → `/Volume1/DockerAppData/radarrdocker/downloads` |
@@ -35,6 +35,17 @@ Radarr on TOS 7 through the App Center:
 - **Three volumes.** `/config` keeps the database and settings; `/media` and `/downloads` give the app a library and a download folder inside its own application data directory.
 - **Health check** probes the web UI on container port 7878.
 - **Fixed image tag, never `:latest`**, Docker Hub only, no `privileged`, no `network_mode: host`, no Docker socket, no `cap_add`.
+
+## Privacy
+
+The package sends no telemetry. Radarr contacts only the indexers and download
+clients you configure (and may check GitHub for its own updates); the
+destinations are chosen by you. See [PRIVACY.md](PRIVACY.md) for the full policy,
+also linked from the package `help` field.
+
+Radarr and its logo are trademarks of their respective owners. This is an
+unofficial community package and is not endorsed by or affiliated with the Radarr
+project or TerraMaster.
 
 ## Runtime file manifest
 
@@ -56,8 +67,8 @@ built from the same sources by `scripts/build-dual.sh`:
 
 | Architecture | Package | Size | SHA-256 |
 |---|---|---|---|
-| x86_64 | `radarrdocker_x86_64.tar.gz` | 3974 B | `0a589f5a1ee28f014deef6ceb22da9862b6058d6dcd26bfed5e7324d1621eb81` |
-| aarch64 | `radarrdocker_aarch64.tar.gz` | 3977 B | `03556df4977a90166167a2e95f6473cee1b663b01f2bff499eb876b8ff8c1a27` |
+| x86_64 | `radarrdocker_x86_64.tar.gz` | 4346 B | `651323864abc260d246ccbe7ab3b40eaafa38b4b9fe01f56cefeac322954b5b1` |
+| aarch64 | `radarrdocker_aarch64.tar.gz` | 4348 B | `550b2cede5f5661282d543fdc20d220c8ba03652e63d63b67d457575e1c315dd` |
 
 The x86_64 package was verified with the full on-device E2E; the aarch64 package
 passes the official `TOSAppSelfTestingTool -c` check and the developer platform's
@@ -68,7 +79,7 @@ automated validation (no ARM host was available for a container E2E).
 ```bash
 scripts/build.sh                  # -> out/radarrdocker.tar.gz + .sha256
 scripts/build.sh 6.4.4-2   # packaging iteration bump
-scripts/build.sh 6.4.4-1 aarch64
+scripts/build.sh 6.4.4-2 aarch64
 ```
 
 The build stages the four files, substitutes the version/platform placeholders,
@@ -94,16 +105,16 @@ bash test/install-and-verify.sh                  # on-device E2E (needs root)
 ## Store submission checklist
 
 1. Public GitHub repo (code + README only).
-2. Release **tag `v6.4.4-1`**, assets `radarrdocker.tar.gz` +
+2. Release **tag `v6.4.4-2`**, assets `radarrdocker.tar.gz` +
    `radarrdocker.tar.gz.sha256` (Docker asset naming: `<app_id>.tar.gz`, **no
    platform suffix**).
 3. Developer platform → Add Application: ID `radarrdocker`, package type Docker,
    repository URL, architecture `x86_64`.
-4. Version Management → Add Version `6.4.4-1` → automated validation → review.
+4. Version Management → Add Version `6.4.4-2` → automated validation → review.
 
 ## License / branding
 
-Radarr is distributed by its upstream authors under **GPL-3.0-only**. The container image is the official image from Docker Hub (`linuxserver/radarr:6.4.4.10685-ls325`) and is used unmodified; no upstream source code is redistributed here. This packaging is an independent community submission by Moechz and is not affiliated with the upstream project or TerraMaster.
+Radarr is distributed by its upstream authors under **GPL-3.0-only**. The container image is the official image from Docker Hub (`linuxserver/radarr:6.4.4.10685-ls326`) and is used unmodified; no upstream source code is redistributed here. This packaging is an independent community submission by Moechz and is not affiliated with the upstream project or TerraMaster. Radarr and its logo are trademarks of their respective owners.
 
 ## Limitations
 
